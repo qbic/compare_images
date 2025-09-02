@@ -10,10 +10,10 @@ image look similar based a similarity score and threshold</h5>
 ## Dependencies:
 image_compare uses [scikit-image](https://github.com/scikit-image/scikit-image) and [pillow](https://github.com/python-pillow/Pillow), to install them type
 ```bash
-$ pip install scikit-image pillow
+pip install scikit-image pillow
 ```
 
 ## Usage:
 ```bash
-$ python image_compare.py <image1> <image2> [score_threshold]")
+python image_compare.py <image1> <image2> [score_threshold]
 ```
