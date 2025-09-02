@@ -26,7 +26,7 @@ def compare_images(img1_path, img2_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 3 or len(sys.argv) > 4:
-        print(f"Usage: {sys.argv[0]} <image1> <image2> [score_threshold]")
+        print(f"Usage: python {sys.argv[0]} <image1> <image2> [score_threshold]")
         print(f"score_threshold should be a value between 0 and 1 (default: {DEFAULT_THRESHOLD})")
         sys.exit(1)
     
