@@ -37,5 +37,7 @@ if __name__ == "__main__":
     print(f"Similarity score: {score:.2f}")
     if score >= threshold:
         print("Images are similar.")
+        sys.exit(0)
     else:
         print("Images are NOT similar.")
+        sys.exit(1)
