@@ -1,6 +1,6 @@
 <div align="center">
 
-# `cyb-engine`
+# `image_compare`
 <p>
 <h5><code>image_compare</code> is a small python script using scikit-image and pillow to check if two
 image look similar based a similarity score and threshold</h5>
