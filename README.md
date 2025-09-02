@@ -1,8 +1,8 @@
+<div align="center">
 # `image_compare`
-
-<p class="align center">
-<h4><code>image_compare</code> is a small python script using scikit-image and pillow to check if two
-image look similar based a similarity score and threshold</h4>
+<p>
+<h5><code>image_compare</code> is a small python script using scikit-image and pillow to check if two
+image look similar based a similarity score and threshold</h5>
 </p>
 </div>
 
