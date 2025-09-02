@@ -1,7 +1,3 @@
-#
-# Install dependencies: pip install scikit-image pillow
-#
-
 from skimage.metrics import structural_similarity as ssim
 from PIL import Image
 import numpy
