@@ -6,7 +6,7 @@ FIXED_IMAGE_SIZE = (256, 256)
 DEFAULT_THRESHOLD = 0.95
 
 def load_and_prepare(img_path):
-    # load and convert to grayscale (mode "L" == grayscale)
+    # load and convert to grayscale
     img = io.imread(img_path, as_gray=True)
 
     # scale down image to 50% size, than scale to fixed size
