@@ -8,9 +8,9 @@ image look similar based a similarity score and threshold</h5>
 </div>
 
 ## Dependencies:
-image_compare uses [scikit-image](https://github.com/scikit-image/scikit-image) and [pillow](https://github.com/python-pillow/Pillow), to install them type
+image_compare uses [scikit-image](https://github.com/scikit-image/scikit-image), to install them type
 ```bash
-pip install scikit-image pillow
+pip install scikit-image
 ```
 ## Usage:
 ```bash

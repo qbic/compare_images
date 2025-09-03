@@ -1,6 +1,5 @@
+from skimage import io, transform
 from skimage.metrics import structural_similarity as ssim
-from PIL import Image
-import numpy
 import sys
 
 FIXED_IMAGE_SIZE = (256, 256)
@@ -8,17 +7,18 @@ DEFAULT_THRESHOLD = 0.95
 
 def load_and_prepare(img_path):
     # load and convert to grayscale (mode "L" == grayscale)
-    img = Image.open(img_path).convert("L")
+    img = io.imread(img_path, as_gray=True)
 
     # scale down image to 50% size, than scale to fixed size
-    half_size = (int(img.size[0] * 0.5), int(img.size[1] * 0.5))
-    img = img.resize(half_size).resize(FIXED_IMAGE_SIZE) 
-    return numpy.array(img)
+    half_size = (int(img.shape[0] * 0.5), int(img.shape[1] * 0.5))
+    img = transform.resize(img, half_size)
+    img = transform.resize(img, FIXED_IMAGE_SIZE) 
+    return img
 
 def compare_images(img1_path, img2_path):
     img1 = load_and_prepare(img1_path)
     img2 = load_and_prepare(img2_path)
-    return ssim(img1, img2, Full=True)
+    return ssim(img1, img2, Full=True, data_range=1.0)
 
 if __name__ == "__main__":
     if len(sys.argv) < 3 or len(sys.argv) > 4:
