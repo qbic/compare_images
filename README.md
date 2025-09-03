@@ -8,7 +8,7 @@ image look similar based a similarity score and threshold</h5>
 </div>
 
 ## Dependencies:
-image_compare uses [scikit-image](https://github.com/scikit-image/scikit-image), to install them type
+image_compare uses [scikit-image](https://github.com/scikit-image/scikit-image), to install it type
 ```bash
 pip install scikit-image
 ```
